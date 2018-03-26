@@ -1,0 +1,22 @@
+name: amchart.js
+description: A web app that use amchart.js in dart
+version: 0.0.1
+author: David Zhao <davidyzhao@yahoo.com>
+
+environment:
+  sdk: '>=1.24.0 < 2.0.0'
+
+dependencies:
+  sass_builder: any
+  dart_to_js_script_rewriter: any
+  browser: any
+  js: any
+  func: any
+
+transformers:
+- sass_builder
+- dart_to_js_script_rewriter
+
+web:
+  compiler:
+    debug: dartdevc
