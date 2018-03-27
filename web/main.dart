@@ -20,28 +20,29 @@ main(){
     var _chart = new zAngularGauge();
     _chart.addTitle('speedometer',12,'dark',1,true);
 
-    _axis = new zGaugeAxis();
-    _axis.startValue = 0;
-    _axis.axisThickness = 1;
-    _axis.valueInterval = 10;
-    _axis.endValue = 220;
+    _axis = new zGaugeAxis()
+      ..startValue = 0
+      ..axisThickness = 1
+      ..valueInterval = 10
+      ..endValue = 220;
+
     // color bands
 
-    zGaugeBand _band1 = new zGaugeBand();
-    _band1.startValue = 0;
-    _band1.endValue = 90;
-    _band1.color = "#00CC00";
+    zGaugeBand _band1 = new zGaugeBand()
+      ..startValue = 0
+      ..endValue = 90
+      ..color = "#00CC00";
 
-    zGaugeBand _band2 = new zGaugeBand();
-    _band2.startValue = 90;
-    _band2.endValue = 130;
-    _band2.color = "#ffac29";
+    zGaugeBand _band2 = new zGaugeBand()
+      ..startValue = 90
+      ..endValue = 130
+      ..color = "#ffac29";
 
-    zGaugeBand _band3 = new zGaugeBand();
-    _band3.startValue = 130;
-    _band3.endValue = 220;
-    _band3.color = "#ea3838";
-    _band3.innerRadius = "95%";
+    zGaugeBand _band3 = new zGaugeBand()
+      ..startValue = 130
+      ..endValue = 220
+      ..color = "#ea3838"
+      ..innerRadius = "95%";
 
     _axis.bands = [_band1, _band2, _band3];
 
