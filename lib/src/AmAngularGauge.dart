@@ -459,8 +459,8 @@ class AmAngularGauge extends AmChart {
   /// Adds a label on a chart. You can use it for labeling axes, adding chart title,
   /// etc. x and y coordinates can be set in number, percent, or a number with ! in front of it -
   /// coordinate will be calculated from right or bottom instead of left or top.
-  external void addLabel(num x, num y, String text, String align, [num size,
-      String color, num rotation, num alpha, bool bold, String url]);
+  // external void addLabel(num x, num y, String text, String align, [num size,
+  //     String color, num rotation, num alpha, bool bold, String url]);
 
   /// Adds a legend to the chart. By default, you don't need to create div for your legend,
   /// however if you want it to be positioned in some different way,

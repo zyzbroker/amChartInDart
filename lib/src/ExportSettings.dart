@@ -10,10 +10,10 @@ class ExportSettings {
   ExportSettings.fakeConstructor$();
   external bool get enabled;
   external set enabled(bool v);
-  external object get libs;
-  external set libs(object v);
-  external object get menu;
-  external set menu(object v);
+  external Object get libs;
+  external set libs(Object v);
+  external Object get menu;
+  external set menu(Object v);
   external dynamic get config;
   external set config(dynamic v);
   external dynamic capture(dynamic config, void callback());

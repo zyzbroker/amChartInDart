@@ -4,19 +4,14 @@ version: 0.0.1
 author: David Zhao <davidyzhao@yahoo.com>
 
 environment:
-  sdk: '>=1.24.0 < 2.0.0'
+  sdk: '>=2.0.0-dev < 3.0.0'
 
 dependencies:
-  sass_builder: any
-  dart_to_js_script_rewriter: any
-  browser: any
-  js: any
-  func: any
+  js: ^0.6.1+1
 
-transformers:
-- sass_builder
-- dart_to_js_script_rewriter
-
-web:
-  compiler:
-    debug: dartdevc
+dev_dependencies:
+  build_runner: ^0.9.0
+  build_test: ^0.10.2
+  build_web_compilers: ^0.4.0
+  test: ^1.0.0
+  sass_builder: "^2.1.1"

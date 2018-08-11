@@ -3,7 +3,6 @@ library GaugeAxis;
 
 import "package:js/js.dart";
 import "GaugeBand.dart" show GaugeBand;
-import "package:func/func.dart";
 import "AmChart.dart" show AmChart;
 
 @JS()
@@ -133,8 +132,8 @@ class GaugeAxis {
 
   /// You can use this function to format axis labels.
   /// This function is called and value is passed as a attribute: labelFunction(value);
-  external Func1<num, String> get labelFunction;
-  external set labelFunction(Func1<num, String> v);
+  // external Func1<num, String> get labelFunction;
+  // external set labelFunction(Func1<num, String> v);
 
   /// Distance from axis to the labels.
   /// @default 15

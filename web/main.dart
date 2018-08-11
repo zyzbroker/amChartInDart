@@ -16,7 +16,6 @@ main(){
     _axis.setBottomText('$value km/h');
   }
 
-  window.onLoad.listen(($event){
     var _chart = new zAngularGauge();
     _chart.addTitle('speedometer',12,'dark',1,true);
 
@@ -57,5 +56,4 @@ main(){
     _chart.write("chartdiv");
 
     new Timer.periodic(_duration, _randomValue);
-  });
 }
